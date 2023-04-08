@@ -14,7 +14,7 @@ PSSWRD_FLD = (By.ID, "password")
 SGN_IN_BTN = (By.XPATH, "//button[@class='w-100 btn btn-lg btn-primary']")
 LOGIN = "WRONG@gmail.com"
 PSSWRD = "WRONG_GUROV"
-TEXT_IS_HERE_5 = EC.presence_of_element_located((By.XPATH, "//ul[@class='mb-0']"))
+INVLD_LGN_OR_PSWRD_TXT = EC.presence_of_element_located((By.XPATH, "//ul[@class='mb-0']"))
 
 # Explicit wait
 wait = WebDriverWait(driver, 15)
@@ -41,7 +41,7 @@ wait.until(EC.element_to_be_clickable(SGN_IN_BTN)).click()
 
 # 6. Verify text "Invalid Login or Password" is here
 expected_text = 'Invalid Login or Password'
-actual_text = wait.until(TEXT_IS_HERE_5).text
+actual_text = wait.until(INVLD_LGN_OR_PSWRD_TXT).text
 assert expected_text in actual_text
 print(f'Expected "{expected_text}", and got: "{actual_text}"\n')
 
