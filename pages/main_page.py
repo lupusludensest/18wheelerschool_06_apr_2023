@@ -19,7 +19,7 @@ TEXT_IS_HERE_3 = (By.XPATH, "//span[@class='px-3']")
 TEXT_IS_HERE_4 = TEXT_IS_HERE_1
 INVLD_LGN_OR_PSWRD_TXT = (By.XPATH, "//ul[@class='mb-0']")
 # GNRL_KNWLDG_TXT_BTN = (By.XPATH, "(//div[@class='d-grid gap-2 m-3'])[1]")
-GNRL_KNWLDG_TXT_BTN = (By.XPATH, "//a[text()='General knowledge (continue)']")
+GNRL_KNWLDG_TXT_BTN = (By.XPATH, "//a[text()='General knowledge']")
 AIR_BRKS_TXT_BTN = (By.XPATH, "(//div[@class='d-grid gap-2 m-3'])[2]")
 CMBNTNS_VHCL_TXT_BTN = (By.XPATH, "(//div[@class='d-grid gap-2 m-3'])[3]")
 ELDT_HZMT_ENDRSMNT_TXT_BTN = (By.XPATH, "(//div[@class='d-grid gap-2 m-3'])[4]")

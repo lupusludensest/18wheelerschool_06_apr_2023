@@ -10,14 +10,14 @@ def login_with_the_right_credentials(context):
 @then('Verify 1 "{txt}" button text is here')
 def gnrl_knwldg_txt_btn(context, txt):
     """
-    Verify "General knowledge (continue)" button text is here
+    Verify 1 "General knowledge" button text is here
     """
     context.app.main_page.gnrl_knwldg_txt_btn(txt)
 
 @then('Verify 2 "{txt}" button text is here')
 def air_brks_txt_btn(context, txt):
     """
-    Verify "Air brakes" button text is here
+    Verify 2 "Air brakes" button text is here
     """
     context.app.main_page.air_brks_txt_btn(txt)
 
