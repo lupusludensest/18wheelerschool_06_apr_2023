@@ -65,7 +65,7 @@ class MainPage(Page):
 
     # 10 Click on Sign in button
     def click_sign_in_btn(self):
-        self.click(*SGN_IN_BTN)
+        self.click( *SGN_IN_BTN)
 
     # 11 Login with the right credentials
     def login_with_the_right_credentials(self):
