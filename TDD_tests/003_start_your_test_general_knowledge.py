@@ -16,8 +16,8 @@ LOGIN = "gurovvic@gmail.com"
 PSSWRD = "QWERTY_GUROV"
 GNRL_KNWLDG_TXT_BTN = EC.presence_of_element_located((By.XPATH, "(//div[@class='d-grid gap-2 m-3'])[1]"))
 # GNRL_KNWLDG_TXT_BTN = EC.presence_of_element_located((By.XPATH, "//a[text()='General knowledge (continue)']"))
-AIR_BRKS_TXT_BTN = EC.presence_of_element_located((By.XPATH, "(//div[@class='d-grid gap-2 m-3'])[2]"))
-CMBNTNS_VHCL_TXT_BTN = EC.presence_of_element_located((By.XPATH, "(//div[@class='d-grid gap-2 m-3'])[3]"))
+AIR_BRKS_TXT_BTN = EC.presence_of_element_located((By.XPATH, "(//div[@class='d-grid gap-2 m-3'])[3]"))
+CMBNTNS_VHCL_TXT_BTN = EC.presence_of_element_located((By.XPATH, "(//div[@class='d-grid gap-2 m-3'])[2]"))
 ELDT_HZMT_ENDRSMNT_TXT_BTN = EC.presence_of_element_located((By.XPATH, "(//div[@class='d-grid gap-2 m-3'])[4]"))
 ALL_RGHTS_TXT = EC.presence_of_element_located((By.XPATH, "//footer[@class='text-black-50']"))
 
@@ -36,7 +36,7 @@ wait.until(EC.element_to_be_clickable(SGN_IN_BTN)).click()
 
 # 3. Verify "General knowledge (continue)" button text is here
 expected_text_1 = 'General knowledge'
-expected_text_2 = 'General knowledge (continue)'
+expected_text_2 = 'General knowledge (BASIC CDL KNOWLEDGE) (continue)'
 actual_text = wait.until(GNRL_KNWLDG_TXT_BTN).text
 assert expected_text_1 == actual_text or expected_text_2 == actual_text
 print(f'Expected username "{expected_text_1}" or "{expected_text_2}", and got: "{actual_text}"\n')
