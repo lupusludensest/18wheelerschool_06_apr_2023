@@ -52,6 +52,7 @@ actual_text = wait.until(TEXT_IS_HERE_3).text
 assert expected_text in actual_text
 print(f'Expected username "{expected_text}", and got: "{actual_text}"\n')
 
+# Driver close
 driver.close()
 
 # Sleep to see what we have
